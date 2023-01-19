@@ -1,59 +1,61 @@
 \documentclass{ExpressiveResume}
 
+\usepackage{xcolor}
+\definecolor{link_blue}{rgb}{0,0.24471,0.86941}
+
 % ----- Resume -----
 \begin{document}
 
 % ----- Name + Contact Information -----
 \resumeheader
 [
-    firstname=Ronnit Roy,
+    firstname=\textcolor{link_blue}{Ronnit Roy},
     middleinitial=,
-    lastname=Burman,
+    lastname=\textcolor{link_blue}{Burman},
     email=rrburman@uwaterloo.ca,
     phone=437-988-2357,
     linkedin=ronnitburman,
     github= ronnitburman,
-    city=,
-    state=,
-    qrcode= ./images/ronnit_qr.png,
-    fixobjectivespacing=true
+    city=Waterloo,
+    state=ON,
+    qrcode= %./images/ronnit_qr.png,
+    %fixobjectivespacing=true,
 ]
 
-\objective{
+\objective{An innovative machine learning engineer with hands-on work experience as a Data Scientist - seeking full-time opportunities to apply Machine Learning methods and develop algorithms to solve real-world industrial problems.
 \\	}
 
 % ----- Technical Skills -----
 
-\section{Technical Skills}
+\section{\textcolor{link_blue}{Technical Skills}}
 \begin{itemize}
-\item {\textbf{Tools \&  Languages -} Python, PostgreSQL, BigQuerry, R, AWS, Hadoop}
+\item {\textbf{Tools \&  Languages -} Python, PostgreSQL, BigQuerry, R, AWS (SageMaker, Rekognition), GCP }
 \item {\textbf{Packages -} NumPy, Pandas, PySpark, Scikit-Learn, Git, Jupyter, Keras, Tensorflow}
 \item {\textbf{Data Visualization -} Power BI, Tableau, Matplotlib}
-\item {\textbf{Machine Learning -} Classical Machine Learning, Deep Learning, Computer Vision, NLP}
+\item {\textbf{Machine Learning -} Classical Machine Learning, Deep Learning, Computer Vision, Pattern Recognition}
 \item {\textbf{Statistical Modelling -} IBM SPSS, Clustering, ANOVA, Logistic Regression, A/B Testing}
 \\
 \end{itemize}
 
 
 % ----- Work Experience -----
-\section{Work Experience}
+\section{\textcolor{link_blue}{Work Experience}}
 
 \experience{Data Science Intern}{Safety Products, Johnson Controls}{Jun 2022}{Present }{
     \achievement{
 
-        \textbf{Developed} a project to correlate\textbf{ alternative GeoSpatial data }(such as Property Crime Index, Demographics, etc.) with traditional data points in order to \textbf{generate} ZIP code \textbf{correlation heat maps} that identify growth opportunities at the grass-roots GeoSpatial level to \textbf{increase sales opportunities by 7\%}. The location-based alternative data was imported using \textbf{web scraping} and the traditional data was imported via \textbf{PostgreSQL} from Google \textbf{BigQuery}. Data was visualized and reports were generated using Power BI. By initiating another project to \textbf{optimize mobile views for Power BI reports}, the number of unique \textbf{views} per day \textbf{increased by 113\%}.
+        \textbf{Developed} a project to correlate\textbf{ \textcolor{link_blue}{alternative GeoSpatial data }}(such as Property Crime Index, Demographics, etc.) with traditional data points in order to \textbf{generate} ZIP code \textbf{correlation heat maps} that identify growth opportunities at the grass-roots GeoSpatial level to \textbf{increase sales opportunities by 7\%}. The location-based alternative data was imported using \textbf{web scraping} and the traditional data was imported via \textbf{\textcolor{link_blue}{PostgreSQL}} from Google \textbf{\textcolor{link_blue}{BigQuery}}. Data was visualized and reports were generated using \textbf{\textcolor{link_blue}{Power BI}}. By initiating another project to \textbf{optimize mobile views for Power BI reports}, the number of unique \textbf{views} per day \textbf{increased by 113\%}.
     
     }
     \achievement{
 
-       \textbf{Prototyped} a model to create floor-plans of your living space using a smartphone camera. PointNet was used to \textbf{consume a 3D point cloud} along with a \textbf{parallel CNN branch} to map the 2D point density of the data from the top view. Around 90\% of living spaces in North America don't have floor plans. If \textbf{floor plans are automatically reconstructed} by walking through the apartment, it can have a huge effect on businesses related to housing.
+       \textbf{Prototyped} a model to create floor-plans of your living space using a smartphone camera. PointNet was used to \textbf{\textcolor{link_blue}{consume a 3D point cloud}} along with a \textbf{\textcolor{link_blue}{parallel CNN branch}} to map the 2D point density of the data from the top view. Around 90\% of living spaces in North America don't have floor plans. If \textbf{floor plans are automatically reconstructed} by walking through the apartment, it can have a huge effect on businesses related to housing.
     }
-     \achievement{
+     %\achievement{
 
-        Performed \textbf{EDA} on more than 50GB data using \textbf{PostgreSQL, Pandas and Google BigQuerry}.
-    }
-    
-}
+        %Performed \textbf{EDA} on more than 50GB data using \textbf{PostgreSQL, Pandas and Google BigQuerry}. }
+ }   
+
 
 
 %\experience{Teaching Assistant}{University of Waterloo}{Jan 2022}{Present}{
@@ -73,11 +75,11 @@
 \experience{Sr. Systems Engineer}{Building Solutions, Johnson Controls}{Jul 2016}{Sep 2021}{
     \achievement{
 
-       \textbf{ Engineered and designed control systems} to optimize energy efficiency and HVAC performance after \textbf{analyzing data from building sensors}. Strategized control sequences and architected network design for the entire building automation control systems \textbf{leading to 10\%-30\% reduction in energy consumption} of Commercial Buildings.    }
+       \textbf{ Engineered and designed control systems} to optimize energy efficiency and HVAC performance after \textbf{\textcolor{link_blue}{analyzing data from building sensors}}. Strategized control sequences and architected network design for the entire building automation control systems \textbf{leading to \textcolor{link_blue}{10\%-30\% reduction in energy consumption}} of Commercial Buildings.    }
 
      \achievement{
 
-        As a result of client communication (measured by appreciation emails from clients and 100 percent response to client emails within 24 hours), we recorded \textbf{100\% client retention and a 137\% increase in client re-orders}.
+        As a result of client communication (measured by appreciation emails from clients and 100 percent response to client emails within 24 hours), we recorded \textbf{\textcolor{link_blue}{100\% client retention and a 137\% increase in client re-orders}}.
 
     }
      \achievement{
@@ -89,10 +91,14 @@
 
        Designated as the \textbf{Innovation Lead} in 2019 for Eastern Part of North America to drive innovation ideation process among the front line workers such as field technicians.
    }
+   \achievement{
+
+       Volunteered to enroll and successfully completed a Cyber Security training course with a 91\% grade. 
+   }
    \subsection{\textbf{\textit{Major Key Projects:}}}
    \achievement{
 
-       {\textbf{Empire State Building:}} Implemented control strategies and optimizations for several floors of the Empire State Building. More than \textbf{40 million dollars} were saved through the Controls efficiency projects.
+       {\textbf{Empire State Building:}} Implemented control strategies and optimizations for several floors of the Empire State Building. More than \textbf{\textcolor{link_blue}{40 million dollars}} were saved through the Controls efficiency projects.
 
    }
    \achievement{
@@ -105,12 +111,12 @@
 }
 
 % ----- Education -----
-\section{Education}
+\section{\textcolor{link_blue}{Education}}
 
 \experience{Master of Engineering}{Artificial Intelligence and Machine Learning}{Sep 2021}{Dec 2022}{
-    \hfill GPA: 3.93 \newline
+    \hfill \textbf{\textcolor{link_blue}{GPA: 3.93}} \newline
     Systems Design Engineering Department \newline
-    University of Waterloo, Waterloo, Ontario \newline
+    \textcolor{link_blue}{\textbf{University of Waterloo}}, Waterloo, Ontario \newline
 }
 
 \experience{Bachelor of Technology}{Electronics and Instrumentation}{Jul 2012}{May 2016}{
@@ -120,7 +126,7 @@
 }
 
 % ----- Technical Projects -----
-\section{Technical Projects}
+\section{\textcolor{link_blue}{Technical Projects}}
 
 \experience{American Sign Language Recogition}{\href{https://github.com/ronnitburman/American_Sign_Language_Detection_MNIST}{\underline{Github Link}}}{Jan 2022}{Sep 2022}{
     \achievement{
@@ -154,13 +160,13 @@
 
 % ----- Additional Roles and Achievments -----
 
-\section{Additional Roles and Achievments}
+\section{\textcolor{link_blue}{Additional Roles and Achievments}}
 \begin{itemize}
 
-\item {\textbf{Winner of International Medical Hackathon:} Organized by CAMtech (Massachusetts General Hospital) in Mbarara, Uganda. During our team’s visit to the hospitals in Uganda, as part of a hackathon to develop affordable medical technologies for developing countries, we observed that lack of operational suction devices caused many fatalities every day in the entire country. To battle this unfortunate situation, we built a gravity-operated, non-electric suction device to replace traditional suction pumps in the hospitals where electricity is not reliable. On full deployment, this working prototype could potentially prevent around 20-25 fatalities daily.}
+\item {\textbf{\textcolor{link_blue}{Winner} of International Medical Hackathon:} Organized by CAMtech (Massachusetts General Hospital) in Mbarara, Uganda. During our team’s visit to the hospitals in Uganda, as part of a hackathon to develop affordable medical technologies for developing countries, we observed that lack of operational suction devices caused many fatalities every day in the entire country. To battle this unfortunate situation, we built a gravity-operated, non-electric suction device to replace traditional suction pumps in the hospitals where electricity is not reliable. On full deployment, this working prototype could potentially prevent around 20-25 fatalities daily.}
 \item {\textbf{Top 10 - Data Challenge Hackathon:} The problem statement focused on computer vision. A Fish-Eye industrial CCTV video was given to us. Using AI and computer vision, we analyzed the video file frame by frame to identify human occupancy within specific regions of interest (ROIs). Objects (humans, forklifts, machines) in the ROI were filtered out to reduce the data size. Pre-trained models like ResNet do not use Fish-Eye images to train the layers. We trained different ensemble models for the different ROIs to account for distortion, increasing our accuracy over training a single model.}
 
-\item {\textbf{3rd Rank – Paper Presentation, IdeaSpark-2015, IIT Madras:} Making medical technology accessible for rural Indians was the theme of the paper presentations. Our idea was to automate PAP smear test protocols to reduce pathologists' workload by three times. Our system generated a repeatable and inexpensive risk score by combining computer vision with process automation.}
+\item {\textbf{\textcolor{link_blue}{3rd Rank} – Paper Presentation, IdeaSpark-2015, IIT Madras:} Making medical technology accessible for rural Indians was the theme of the paper presentations. Our idea was to automate PAP smear test protocols to reduce pathologists' workload by three times. Our system generated a repeatable and inexpensive risk score by combining computer vision with process automation.}
 
 \item {\textbf{Teaching Assistant - SYDE600 - Prof. John Zelek:} Facilitated students with the SPRINT protocol for Engineering System Design methods applying the principles of engineering problem solving, research methods, systems analysis including modeling, simulation, optimization and design.}
 \item {\textbf{President - department Graduate Student Association, uWaterloo:} Provided leadership in spearheading a work plan to develop, execute and monitor various graduate students events to promote mental health during the difficult times of COVID. Pioneered re-Introduction of in-person symposiums after COVID shutdown for graduate students to network and share their works.}
@@ -169,7 +175,7 @@
 %\item{Automatic Transmission}
 %\item{Wireless Charging}
 %\item{Wireless Data Acquisition}
-%\newline
+\newline
 %\end{itemize}
 
 
@@ -177,7 +183,7 @@
 
 % ----- CERTIFICATIONS -----
 
-\section{Certifications}
+\section{\textcolor{link_blue}{Certifications}}
 \begin{itemize}
 \item {\href{https://www.coursera.org/account/accomplishments/verify/C7C8CPGARXJW?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course}{\textbf{Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning} (Click to verify)}}
 \item {\href{https://www.coursera.org/account/accomplishments/verify/ZRBWP4ZFF8YX}{\textbf{Neural Networks and Deep Learning} (Click to verify)}}
@@ -189,7 +195,7 @@
 
 % ----- Courses Undertaken -----
 
-\section{Courses Undertaken}
+\section{\textcolor{link_blue}{Courses Undertaken}}
 \begin{itemize}
 \item {\textbf{Advanced Image Processing} - SYDE671 - University of Waterloo}
 \item {\textbf{Pattern Recognition} - SYDE675 - University of Waterloo}
